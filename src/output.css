@@ -985,6 +985,15 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-1 {
+    bottom: calc(var(--spacing) * 1);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-12 {
+    bottom: calc(var(--spacing) * 12);
+  }
   .bottom-\[60px\] {
     bottom: 60px;
   }
@@ -1078,6 +1087,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .ms-2 {
+    margin-inline-start: calc(var(--spacing) * 2);
+  }
   .ms-2\.5 {
     margin-inline-start: calc(var(--spacing) * 2.5);
   }
@@ -1095,6 +1107,9 @@
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -1485,6 +1500,9 @@
   .table {
     display: table;
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
   }
@@ -1508,9 +1526,6 @@
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
-  }
-  .h-80 {
-    height: calc(var(--spacing) * 80);
   }
   .h-\[calc\(100\%-1rem\)\] {
     height: calc(100% - 1rem);
@@ -1607,8 +1622,14 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
@@ -1705,6 +1726,9 @@
   .flex-shrink {
     flex-shrink: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1781,6 +1805,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -2086,6 +2113,9 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -2153,6 +2183,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2164,6 +2206,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
   }
   .apexcharts-legend {
     .apexcharts-canvas & {
@@ -2445,6 +2490,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -2476,6 +2524,10 @@
   }
   .backdrop-blur-lg {
     --tw-backdrop-blur: blur(var(--blur-lg));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }

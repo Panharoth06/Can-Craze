@@ -1,20 +1,20 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//     darkMode: 'class',
-//     content: ['./index.html'],
-//     theme: {
-//       extend: {
-//         keyframes: {
-//           rotate: {
-//             '0%': { transform: 'perspective(1000px) rotateY(0deg)' },
-//             '100%': { transform: 'perspective(1000px) rotateY(360deg)' },
-//           },
-//         },
-//         animation: {
-//           rotate: 'rotate 30s linear infinite',
-//         },
-//       },
-//     },
-//     plugins: [require('flowbite/plugin')],
-//   };
+/** @type {import('tailwindcss').Config} */
+export default {
+    darkMode: 'class',
+    content: ['./index.html'],
+    theme: {
+      extend: {
+        keyframes: {
+          rotate: {
+            '0%': { transform: 'perspective(1000px) rotateY(0deg)' },
+            '100%': { transform: 'perspective(1000px) rotateY(360deg)' },
+          },
+        },
+        animation: {
+          rotate: 'rotate 30s linear infinite',
+        },
+      },
+    },
+    plugins: [require('flowbite/plugin')],
+  };
   
