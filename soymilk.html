@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CanCraze - Home</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .animate-fade-in-1 {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+        animation-delay: 0.2s;
+      }
+
+      .animate-fade-in-2 {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+        animation-delay: 0.4s;
+      }
+
+      .animate-fade-in-3 {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+        animation-delay: 0.6s;
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        .testimonial-card {
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .card-content {
+            transition: all 0.4s ease;
+        }
+        
+        .card-detail {
+            max-height: 0;
+            opacity: 0;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+        
+        .testimonial-card:hover .card-detail {
+            max-height: 200px;
+            opacity: 1;
+        }
+       
+        
+        .testimonial-slider {
+            scroll-behavior: smooth;
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.5s forwards;
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.5s forwards;
+        }
+        
+        .slide-out-left {
+            animation: slideOutLeft 0.5s forwards;
+        }
+        
+        .slide-out-right {
+            animation: slideOutRight 0.5s forwards;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOutLeft {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+       
+        
+  
+     
+        /* end page  */ 
+        @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(1.05); }
+    }
+    @keyframes slide-in-left {
+      0% { transform: translateX(-50px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slide-in-right {
+      0% { transform: translateX(50px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes fade-in-up {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    /* Custom animation classes */
+    
+    .animate-pulse-glow {
+      animation: pulse-glow 6s ease-in-out infinite;
+    }
+    .animate-slide-in-left {
+      animation: slide-in-left 1s ease-out forwards;
+    }
+    .animate-slide-in-right {
+      animation: slide-in-right 1s ease-out forwards;
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out forwards;
+    }
+    /* Animation delays */
+    .delay-200 { animation-delay: 200ms; }
+    .delay-400 { animation-delay: 400ms; }
+    .delay-600 { animation-delay: 600ms; }
+    
+    /* Hover effects */
+    .hover-scale:hover {
+      transform: scale(1.05);
+    } 
+    /* End of detail */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    
+
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    .animate-fade-in-right {
+      animation: fadeInRight 1s ease-out forwards;
+    }
+    
+    .animate-fade-in-left {
+      animation: fadeInLeft 1s ease-out forwards;
+    }
+    
+    .animate-delay-200 {
+      animation-delay: 200ms;
+    }
+    
+    .animate-delay-400 {
+      animation-delay: 400ms;
+    }
+    
+    .animate-delay-600 {
+      animation-delay: 600ms;
+    }
+    
+    /* Hover effects */
+    
+    
+    
+
+       
+    </style>
+  </head>
+  <body class="h-screen">
+    <header class="px-1 md:px-2 fixed  top-0 left-0 w-full z-50">
+      <nav
+        class="bg-primary-900 border-gray-200 dark:bg-gray-900 dark:border-gray-700 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-multi-level"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-multi-level"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-slate-700 bg-secondary-900 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Products
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Soft Drinks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Energy Drinks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Coffee</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Bubble Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Fruit Juices</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Soy Milk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-20 w-full">
+      <div class="relative h-screen text-white overflow-hidden">
+        <!-- Background image with parallax effect -->
+        <div
+          class="absolute inset-0 transform transition-transform duration-1000 ease-in-out hover:scale-105"
+        >
+          <img
+            src="images/Soymilkhead.jpg"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full"
+          />
+          <!-- Overlay with gradient -->
+          <div class="absolute inset-0 bg-gradient-overlay"></div>
+        </div>
+
+        <!-- Content container -->
+        <div
+          class="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center md:items-start h-full "
+        >
+          <!-- Content with staggered animations -->
+          <di class="max-w-3xl text-center lg:text-left lg:mx-40 font-sans">
+            <!-- Animated heading -->
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fade-in-1 text-shadow font-sans"
+            >
+              Welcome to Our
+              <span class="text-blue-400">Awesome</span> Website
+            </h1>
+
+            <!-- Animated subheading -->
+            <p
+              class="text-base sm:text-lg md:text-xl text-gray-300 mb-6 md:mb-8 animate-fade-in-2"
+            >
+              Discover amazing features and services that await you. We're here
+              to transform your digital experience.
+            </p>
+
+            <!-- Button container with animation -->
+            <div
+              class="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-in-3"
+            >
+              <a
+                href="#"
+                class="bg-blue-400 text-gray-900 hover:bg-blue-300 py-3 px-8 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl animate-float"
+              >
+                Get Started
+              </a>
+              <a
+                href="#"
+                class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 py-3 px-8 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class=" font-sans  bg-blue-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="text-center mb-12">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-[#293056] leading-tight mb-4 ">
+                  Here's What Our Customers Are Saying About Us
+              </h1>
+              
+          </div>
+          
+          <div class="relative">
+              <!-- Navigation Buttons -->
+              <div class="absolute inset-y-0 left-0 flex items-center z-10">
+                  <button id="prev-btn" class="bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#293056]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                      </svg>
+                  </button>
+              </div>
+              <div class="absolute inset-y-0 right-0 flex items-center z-10">
+                  <button id="next-btn" class="bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#293056]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                  </button>
+              </div>
+              <!-- End of Navigation  --> 
+
+              <!-- Cards container -->
+              <div class="relative overflow-hidden ">
+                  <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+                      <!-- Testimonial Card 1 -->
+                      <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2 bg-[#b1d2d0]">
+                          <div class="h-96 rounded-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('https://silk.com/wp-content/uploads/silk-organic-unsweetened-soymilk.png')">
+                              <div class="absolute inset-0 gradient-overlay"></div>
+                              <div class="absolute bottom-6 left-6 right-6 text-white card-content">
+                                  <div class="mb-3">
+                                      <h3 class="font-bold text-white text-lg">Organic Unsweet
+                                        Soymilk</h3>
+                                      
+                                  </div>
+                                 
+                                  <div class="card-detail mt-4 pt-3 border-t border-white/30">
+                                      <h4 class="font-bold text-white/90 mb-1">Enjoy with us:</h4>
+                                    
+                                      <div class="mt-2 flex items-center">
+                                          <div class="flex">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                          </div>
+                                          <span class="ml-1 text-xs text-white/80">5.0 rating</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Testimonial Card 2 -->
+                      <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2 bg-[#cd8780]">
+                          <div class="h-96 rounded-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('./images/silk-original-soymilk.png')">
+                              <div class="absolute inset-0 gradient-overlay"></div>
+                              <div class="absolute bottom-6 left-6 right-6 text-white card-content">
+                                  <div class="mb-3">
+                                      <h3 class="font-bold text-white text-lg">Original Soymilk</h3>
+                                      
+                                  </div>
+                                  
+                                  <div class="card-detail mt-4 pt-3 border-t border-white/30">
+                                      <h4 class="font-bold text-white/90 mb-1">Enjoy with us:</h4>
+                                      
+                                      <div class="mt-2 flex items-center">
+                                          <div class="flex">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400/40" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                          </div>
+                                          <span class="ml-1 text-xs text-white/80">4.0 rating</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Testimonial Card 3 -->
+                      <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2 bg-[#9dc1db]">
+                          <div class="h-96 rounded-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('./images/Vanilla-Soymilk.png')">
+                              <div class="absolute inset-0 gradient-overlay"></div>
+                              <div class="absolute bottom-6 left-6 right-6 text-white card-content">
+                                  <div class="mb-3">
+                                      <h3 class="font-bold text-white text-lg">Vanilla Soymilk</h3>
+                                     
+                                  </div>
+                                 
+                                  <div class="card-detail mt-4 pt-3 border-t border-white/30">
+                                      <h4 class="font-bold text-white/90 mb-1">Enjoy with us:</h4>
+                                      
+                                      <div class="mt-2 flex items-center">
+                                          <div class="flex">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                          </div>
+                                          <span class="ml-1 text-xs text-white/80">5.0 rating</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Testimonial Card 4 -->
+                      <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2 bg-[#aa8e7f]">
+                          <div class="h-96 rounded-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('./images/silk-chocolate-soymilk.png')">
+                              <div class="absolute inset-0 gradient-overlay"></div>
+                              <div class="absolute bottom-6 left-6 right-6 text-white card-content">
+                                  <div class="mb-3">
+                                      <h3 class="font-bold text-white text-lg">Chocolate Soymilk</h3>
+                                      
+                                  </div>
+                                
+                                  <div class="card-detail mt-4 pt-3 border-t border-white/30">
+                                      <h4 class="font-bold text-white/90 mb-1">Enjoy with us:</h4>
+                                     
+                                      <div class="mt-2 flex items-center">
+                                          <div class="flex">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400/40" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                          </div>
+                                          <span class="ml-1 text-xs text-white/80">4.5 rating</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Testimonial Card 5 -->
+                      <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2 bg-[#a68aa5]">
+                          <div class="h-96 rounded-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('./images/silk-extra-creamy-oatmilk.png')">
+                              <div class="absolute inset-0 gradient-overlay"></div>
+                              <div class="absolute bottom-6 left-6 right-6 text-white card-content">
+                                  <div class="mb-3">
+                                      <h3 class="font-bold text-white text-lg">Extra Creamy
+                                        Oatmilk</h3>
+                                      
+                                  </div>
+                                  
+                                  <div class="card-detail mt-4 pt-3 border-t border-white/30">
+                                      <h4 class="font-bold text-white/90 mb-1">Enjoy with us:</h4>
+                                      
+                                     
+                                      <div class="mt-2 flex items-center">
+                                          <div class="flex">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                              </svg>
+                                          </div>
+                                          <span class="ml-1 text-xs text-white/80">5.0 rating</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Pagination Dots -->
+              <div class="flex justify-center mt-6">
+                  <div id="pagination" class="flex space-x-2">
+                      <!-- Dots will be added dynamically -->
+                  </div>
+              </div>
+          </div> 
+      </div>
+
+      <!---End of card container -->
+      
+    
+       <!--End of detail -->
+       <div class=" min-h-screen w-full overflow-hidden relative">
+    
+        <!-- First Section - Non-IT enterprises -->
+        <div class="relative bg-[#98c9e2] w-full max-w-7xl mx-auto px-10 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Content area with text and button -->
+            <div class="relative z-10 order-2 lg:order-1">
+              <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 animate-fade-in-up">Vanilla Soymilk</h2>
+              <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-lg animate-fade-in-up animate-delay-200">
+                Silk® Soymilk is the Original Nutrition PowerhouseTM, made from whole-harvested soybeans grown in the U.S. and Canada. It’s the rich, creamy goodness you want, with a hint of vanilla flavor.
+
+                 
+              </p>
+              <button class="inline-flex items-center px-8 py-3 rounded-full border-3  text-blue-500 hover:bg-blue-400 hover:text-white transition-all duration-300 hover-lift animate-fade-in-up animate-delay-400">
+                <span class="text-lg font-normal">BuyNow Save 25%</span>
+               
+              </button>
+            </div>
+            
+            <!-- Image on the right -->
+            <div class="relative order-1 lg:order-2 lg:translate-x-16 xl:translate-x-24">
+              <div class="w-full h-auto max-w-lg mx-auto lg:mx-0 animate-float">
+                <img src="./images/Vanilla-Soymilk.png" alt="Non-IT enterprises" 
+                    class="w-full h-auto object-cover rounded-lg  animate-fade-in-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Section - Software product companies -->
+        <div class="relative bg-[#bc9b8d] w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 mt-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Image on the left -->
+            <div class="relative lg:-translate-x-16 xl:-translate-x-24">
+              <div class="w-full h-auto max-w-lg mx-auto lg:mx-0 animate-float" style="animation-delay: 1s">
+                <img src="./images/silk-chocolate-soymilk.png" alt="Software product companies" 
+                    class="w-full h-auto object-cover rounded-lg  animate-fade-in-left" />
+              </div>
+            </div>
+            
+            <!-- Content area with text and button -->
+            <div class="relative ">
+              <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 animate-fade-in-up">Chocolate Soymilk</h2>
+              <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-lg animate-fade-in-up animate-delay-200">
+                Silk® Soymilk is the Original Nutrition PowerhouseTM, made from whole-harvested soybeans grown in the U.S. and Canada. It’s the rich, creamy goodness you want, made with real cocoa.
+              </p>
+              <button class="inline-flex items-center px-8 py-3 rounded-full border-3   text-yellow-700 hover:bg-amber-700 hover:text-white transition-all duration-300 hover-lift animate-fade-in-up animate-delay-400">
+                <span class="text-lg font-normal">BuyNow Save 20%</span>
+                
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Wave decoration at bottom -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-auto">
+            <path fill="#ffffff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,208C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+          </svg>
+        </div>
+      </div>
+       
+
+       <!--End page -->
+       <div class="a font-sans">
+        <div class="min-h-screen bg-blue-100 flex items-center justify-center p-4 md:p-8 overflow-hidden font-sans">
+          <div class="max-w-6xl w-full h-full md:h-96 mx-auto flex flex-col md:flex-row items-center relative">
+            
+            <!-- Left content area with slide-in animation -->
+            <div class="w-full md:w-1/2 text-white z-10 mb-8 md:mb-0 animate-slide-in-left text-center md:text-left">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6 text-white">
+                <span class="text-white">Plant-Based</span> <br>
+                <span class="text-white">Nutrition</span> <br>
+                <span class="text-white">Made Delicious</span>
+              </h1>
+              
+              <div class="mt-8 animate-fade-in delay-300 flex justify-center md:justify-start">
+                <button class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105">
+                  Shop Now
+                </button>
+              </div>
+              
+              <div class="mt-10 flex items-center gap-3 animate-fade-in delay-600 justify-center md:justify-start">
+                <div class="flex -space-x-2">
+                  <div class="w-8 h-8 rounded-full bg-blue-200 border-2 border-white"></div>
+                  <div class="w-8 h-8 rounded-full bg-blue-300 border-2 border-white"></div>
+                  <div class="w-8 h-8 rounded-full bg-blue-600 border-2 border-white"></div>
+                </div>
+                <span class="ml-3 text-blue-800">Trusted by thousands</span>
+              </div>
+            </div>
+            
+            <!-- Right product image with animation - hidden on small screens -->
+            <div class="hidden md:flex w-full md:w-1/2 justify-center md:justify-end relative animate-slide-in-right">
+              <div class="relative">
+                <img 
+                  src="./images/handholding.png" 
+                  alt="Hand holding Silk Vanilla Soy Milk Carton" 
+                  class="w-full h-[800px]  relative animate-float"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+       <!--End page -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('testimonial-slider');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const pagination = document.getElementById('pagination');
+            
+            let currentIndex = 0;
+            let cardWidth = cards[0].offsetWidth;
+            let visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            let maxIndex = Math.max(0, cards.length - visibleCards);
+            
+            // Initialize slider position
+            updateSliderPosition();
+            
+            // Create pagination dots
+            createPaginationDots();
+            
+            // Event listeners for buttons
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    animateSlide('left');
+                    updateSliderPosition();
+                    updateActiveDot();
+                }
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    animateSlide('right');
+                    updateSliderPosition();
+                    updateActiveDot();
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                cardWidth = cards[0].offsetWidth;
+                visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+                maxIndex = Math.max(0, cards.length - visibleCards);
+                
+                // Ensure current index is valid after resize
+                if (currentIndex > maxIndex) {
+                    currentIndex = maxIndex;
+                }
+                
+                updateSliderPosition();
+                createPaginationDots(); // Recreate dots based on new visible cards count
+                updateActiveDot();
+            });
+            
+            // Function to update slider position
+            function updateSliderPosition() {
+                slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                
+                // Show/hide nav buttons based on position
+                prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                nextBtn.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+            }
+            
+            // Function to animate slide transition
+            function animateSlide(direction) {
+                cards.forEach(card => {
+                    card.classList.remove('slide-in-right', 'slide-in-left');
+                    card.style.opacity = '1';
+                });
+                
+                const targetCard = cards[currentIndex];
+                if (direction === 'right') {
+                    targetCard.classList.add('slide-in-right');
+                } else {
+                    targetCard.classList.add('slide-in-left');
+                }
+            }
+            
+            // Function to create pagination dots
+            function createPaginationDots() {
+                pagination.innerHTML = '';
+                const dotCount = maxIndex + 1;
+                
+                for (let i = 0; i < dotCount; i++) {
+                    const dot = document.createElement('button');
+                    dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'focus:outline-none');
+                    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                    
+                    dot.addEventListener('click', () => {
+                        const oldIndex = currentIndex;
+                        currentIndex = i;
+                        
+                        if (oldIndex < currentIndex) {
+                            animateSlide('right');
+                        } else if (oldIndex > currentIndex) {
+                            animateSlide('left');
+                        }
+                        
+                        updateSliderPosition();
+                        updateActiveDot();
+                    });
+                    
+                    pagination.appendChild(dot);
+                }
+                
+                updateActiveDot();
+            }
+            
+            // Function to update active pagination dot
+            function updateActiveDot() {
+                const dots = pagination.querySelectorAll('button');
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-[#293056]', 'w-4', 'h-4');
+                    } else {
+                        dot.classList.remove('bg-[#293056]', 'w-4', 'h-4');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+            
+            // Optional: Auto-slide functionality
+            let autoSlideInterval;
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    if (currentIndex < maxIndex) {
+                        currentIndex++;
+                    } else {
+                        currentIndex = 0;
+                    }
+                    animateSlide(currentIndex === 0 ? 'left' : 'right');
+                    updateSliderPosition();
+                    updateActiveDot();
+                }, 5000); // Change slide every 5 seconds
+            }
+            
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Start auto-slide
+            startAutoSlide();
+            
+            // Pause auto-slide on hover
+            slider.parentElement.addEventListener('mouseenter', stopAutoSlide);
+            slider.parentElement.addEventListener('mouseleave', startAutoSlide);
+            
+            // Touch events for mobile swiping
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            slider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                stopAutoSlide();
+            }, {passive: true});
+            
+            slider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, {passive: true});
+            
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    // Swipe left
+                    if (currentIndex < maxIndex) {
+                        currentIndex++;
+                        animateSlide('right');
+                        updateSliderPosition();
+                        updateActiveDot();
+                    }
+                }
+                
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    // Swipe right
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        animateSlide('left');
+                        updateSliderPosition();
+                        updateActiveDot();
+                    }
+                }
+            }
+        });
+        
+  </script>
+    </script>
+  </body>
+</html>

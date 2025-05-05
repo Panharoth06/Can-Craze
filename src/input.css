@@ -2,6 +2,7 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+
 @theme {
   --color-primary-100: #8c8355;
   --color-primary-200: #999064;
@@ -30,6 +31,7 @@ body {
   background-attachment: fixed;
   background-attachment: fixed;
 }
+
 
 /* @layer components {
   .span-style {
