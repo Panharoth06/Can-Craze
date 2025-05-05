@@ -17,4 +17,3 @@
 //     },
 //     plugins: [require('flowbite/plugin')],
 //   };
-  
