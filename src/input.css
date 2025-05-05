@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --color-primary-100: #8c8355;
+  --color-primary-200: #999064;
+  --color-primary-300: #a59d74;
+  --color-primary-400: #b2ab85;
+  --color-primary-500: #bfb996;
+  --color-primary-600: #cbc8a8;
+  --color-primary-700: #d8d5bb;
+  --color-primary-800: #e5e2cf;
+  --color-primary-900: #f2f0e5;
+
+  --color-secondary-100: #334d18;
+  --color-secondary-200: #4a6b25;
+  --color-secondary-300: #628a32;
+  --color-secondary-400: #79a740;
+  --color-secondary-500: #90c54e;
+  --color-secondary-600: #9acc63;
+  --color-secondary-700: #a0c878; /* your base */
+  --color-secondary-800: #b7d992;
+  --color-secondary-900: #d4eac0;
+}
+
+body {
+  background-color: #fdfdfd;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzMwMCcgdmlld0JveD0nMCAwIDIwMCAzMDAnPgoJPGZpbHRlciBpZD0nZnV6eicgeD0nMCcgeT0nMCc+CgkJPGZlVHVyYnVsZW5jZSB0eXBlPSd0dXJidWxlbmNlJyBiYXNlRnJlcXVlbmN5PScwLjMnIG51bU9jdGF2ZXM9JzEwJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+Cgk8L2ZpbHRlcj4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4xNScvPgo8L3N2Zz4=);
+  background-attachment: fixed;
+  background-attachment: fixed;
+}
+html {
+  scroll-behavior: smooth;
+}
+.font-display {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-text {
+  animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* @layer components {
+  .span-style {
+    @apply absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(120px)];
+  }
+  .img-style {
+    @apply absolute top-0 left-0 w-full h-full rounded-sm object-cover [transition:2s] sm:hover:-translate-y-[50px] hover:-translate-y-[20px] hover:scale-[1.3];
+  }
+} */
