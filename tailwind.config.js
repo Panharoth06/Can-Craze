@@ -17,7 +17,7 @@
 //     },
 //     plugins: [require('flowbite/plugin')],
 //   };
-<<<<<<< HEAD
+
 tailwind.config = {
     theme: {
       extend: {
@@ -47,5 +47,4 @@ tailwind.config = {
     }
   }
   
-=======
->>>>>>> remotes/origin/echhean
+
