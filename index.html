@@ -4,60 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CanCraze - Home</title>
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="shortcut icon" href="./images/can-craze.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/f  lowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
   </head>
-  <body class="h-screen">
-    <header class="px-1 md:px-2 fixed top-0 w-full">
+  <body>
+    <header class="px-1 md:px-2 fixed top-0 w-full z-50 backdrop-blur-lg">
       <nav
-        class="bg-primary-900 border-gray-200 dark:bg-gray-900 dark:border-gray-700 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
+        class="bg-primary-900 border-gray-200 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
       >
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
         >
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
+              src="./assets/logo/can-craze.png"
+              class="h-12 md:h-14"
+              alt="Can Craze Logo"
             />
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Flowbite</span
+              class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap"
+              >Can Craze</span
             >
           </a>
           <button
             data-collapse-toggle="navbar-multi-level"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-multi-level"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg
               class="w-5 h-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewBox="0 0 17 14"
-            >
+              viewBox="0 0 17 14">
               <path
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
+                d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-slate-700 bg-secondary-900 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page"
+                  href="./index.html"
+                  class="block py-2 px-3 text-blue-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   >Home</a
                 >
               </li>
@@ -65,7 +66,8 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 px-3 md:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  aria-current="page"
                 >
                   Products
                   <svg
@@ -73,65 +75,61 @@
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
-                    viewBox="0 0 10 6"
-                  >
+                    viewBox="0 0 10 6">
                     <path
                       stroke="currentColor"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
+                      d="m1 1 4 4 4-4" />
+                  c/svg>
                 </button>
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    class="py-2 text-sm text-gray-700"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="softDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Soft Drinks</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="energyDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Energy Drinks</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="coffee.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Coffee</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="bubbleTea.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Bubble Tea</a
                       >
                     </li>
                     <li>
                       <a
                         href="fruitJuice.html"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Fruit Juices</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      <a href="soymilk.html" class="block px-4 py-2 hover:bg-gray-100"
                         >Soy Milk</a
                       >
                     </li>
@@ -140,15 +138,15 @@
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="aboutUs.html"
+                  class="block py-2 px-3 text-slate-700 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="./aboutUs.html"
+                  class="block py-2 px-3 text-slate-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   >Contact</a
                 >
               </li>
@@ -157,73 +155,477 @@
         </div>
       </nav>
     </header>
-    <main class="mt-20 w-full">
-      <section class="flex max-w-screen-xl mx-auto px-6 md:px-8 lg:px-10">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta
-          eveniet deleniti enim possimus veritatis dicta aperiam, ut ea cum et
-          illum laborum dignissimos unde quibusdam, culpa inventore sint neque.
-          Culpa, quod? Sit laboriosam corporis consectetur. Numquam voluptatem
-          ratione, nisi ducimus porro explicabo doloribus molestias ea dolore?
-          Suscipit, quisquam. Illum rerum voluptatibus vitae expedita quod
-          laudantium ipsa vel officia. Provident. Omnis dolor atque voluptates
-          totam suscipit quis consequuntur harum, unde quibusdam voluptatibus!
-          Quasi iusto perspiciatis doloribus veritatis similique assumenda modi
-          dignissimos, nobis deserunt excepturi porro accusamus ipsa cupiditate,
-          earum non. Ratione, obcaecati pariatur! Ipsa, sequi id quos
-          perferendis beatae qui at similique consequuntur maxime saepe iste,
-          doloribus dolorem voluptatem fugiat iusto voluptate quod. Autem ut
-          dolor molestias id rem quo. Possimus, ducimus repudiandae labore ea ut
-          distinctio porro, ad fugit rem maiores, veritatis ratione? Totam
-          molestias praesentium numquam asperiores dolore consectetur aliquid
-          temporibus! Modi, repudiandae id et dolorum nisi assumenda?
-          Perspiciatis aliquam sapiente in tempore hic quaerat et, praesentium
-          excepturi odio nobis consequatur illum nisi deserunt qui vitae
-          temporibus mollitia maiores porro earum assumenda doloribus esse
-          voluptas repellendus est. Incidunt! Error est natus, praesentium quos
-          minima repellat nesciunt iusto, ab omnis illum veniam suscipit dolorum
-          repellendus vitae dolore magni reiciendis? Obcaecati omnis laboriosam
-          optio quo sequi sapiente odit consequatur. Esse! Iste dolorum aut
-          quae, a voluptas vitae praesentium quos fugiat cum in quibusdam dicta
-          ipsum molestias ducimus dolores labore tenetur quisquam obcaecati
-          maxime adipisci repellat quas vel temporibus? Quos, consequuntur. Sint
-          ab quibusdam voluptatibus labore iure, atque nihil! Totam amet
-          officiis voluptatem, nemo omnis provident illo fuga eaque dolore
-          officia repellat. Ex qui distinctio doloribus deleniti nihil quidem
-          iste culpa! Culpa ducimus cumque pariatur, commodi quas sequi, cum aut
-          porro aperiam possimus voluptas nulla assumenda eum magni, quos
-          corporis? Ducimus ratione necessitatibus sequi laborum pariatur vero
-          magnam nobis ipsa suscipit. Dignissimos quod error, iure aliquid quasi
-          quae voluptas a id facilis enim officia minus ratione voluptate? Sunt
-          eligendi adipisci vitae unde alias, nam magni corporis reprehenderit
-          aut fugit? Dolorum, assumenda. Facilis veritatis sunt commodi dicta
-          sed accusamus culpa sit illo in voluptatum! Pariatur tempore quam
-          autem voluptas velit quis, ab sequi mollitia libero possimus esse,
-          dicta quisquam eveniet consequuntur quos. Eveniet id accusamus facere
-          veritatis nemo voluptatem veniam voluptas eos! Mollitia, rem. Esse
-          voluptatem dolor ducimus distinctio laborum sunt quaerat inventore
-          exercitationem veritatis pariatur mollitia numquam, similique fuga
-          laboriosam aut! Aliquam nobis culpa delectus, fugit totam animi
-          consequatur accusantium distinctio aliquid. Voluptatibus, maxime
-          iusto. Rem, nesciunt debitis eos ducimus ab veniam nemo explicabo
-          soluta tenetur laborum ipsam dolore doloremque. Ad. Dicta perferendis
-          id totam, reiciendis iure sed vel tenetur, aut eveniet porro
-          voluptatum enim, hic deserunt ex voluptatem facilis cumque rerum
-          voluptate alias consectetur autem ipsum. Excepturi earum atque
-          repellat? Dicta in repellat ipsum modi! Amet atque laudantium iusto ad
-          vero non dolorum accusamus ea quis dolore quia quisquam
-          exercitationem, nostrum animi voluptatem aspernatur voluptas tenetur.
-          Praesentium quis itaque perspiciatis. Unde non placeat est natus
-          dolorem ipsum nesciunt, quia perspiciatis nisi vero blanditiis animi
-          provident neque, possimus dolor enim incidunt! Asperiores placeat
-          explicabo maxime dicta reiciendis autem eos dolorum consectetur? Quas
-          eaque maxime reiciendis officia doloremque temporibus earum alias
-          laborum, facilis dolores labore sit placeat praesentium enim eius
-          similique voluptates mollitia ipsum perferendis omnis commodi
-          laboriosam illo? Ducimus, vero natus.
-        </h1>
-      </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 ">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in" data-delay="0">
+            <h5 class="text-primary-600  font-semibold mb-4 tracking-wide uppercase">Premium Beverages</h5>
+            <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gray-900  mb-6 leading-tight">YOUR BEVERAGE <span class="inline-block">ELEVATED</span></h1>
+            <p class="text-lg text-gray-700  mb-8 max-w-lg">From new flavors to new vibes, our premium beverages are crafted to elevate your daily experience with natural ingredients.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                ORDER NOW
+              </a>
+              <a href="#" class="px-6 py-3 bg-white  text-primary-600  font-medium rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl border border-primary-200  hover:border-primary-300 ">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="fade-in relative" data-delay="300">
+            <div class="rounded-full absolute top-1/4 -left-8 w-48 h-48 bg-secondary-400 opacity-20 blur-3xl"></div>
+            <div class="rounded-full absolute bottom-1/4 -right-8 w-64 h-64 bg-primary-400 opacity-20 blur-3xl"></div>
+            <img 
+              src="https://images.pexels.com/photos/4389666/pexels-photo-4389666.jpeg" 
+              alt="CanCraze Premium Beverage" 
+              class="w-full h-auto max-w-md mx-auto rounded-2xl object-cover shadow-xl"
+            />
+            <div class="absolute -bottom-8 -right-8 md:bottom-8 md:right-0 bg-white  rounded-xl p-3 shadow-lg transform rotate-6">
+              <div class="flex items-center gap-2">
+                <div class="h-3 w-3 rounded-full bg-green-500"></div>
+                <span class="text-sm font-medium">100% Natural</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Decorative elements -->
+      <div class="absolute top-1/3 left-5 w-24 h-24 border-2 border-primary-200  rounded-full opacity-30"></div>
+      <div class="absolute bottom-1/4 right-10 w-16 h-16 border-2 border-secondary-200  rounded-full opacity-30"></div>
+      <div class="absolute top-1/2 right-1/4 w-8 h-8 bg-accent-400  rounded-full opacity-20"></div>
+    </section>
+
+
+    <!-- No THC Section -->
+    <section class="py-20 bg-gray-50  overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in order-2 md:order-1" data-delay="0">
+            <div class="relative">
+              <div class="rounded-full absolute top-1/4 -left-8 w-48 h-48 bg-primary-400 opacity-10 blur-3xl"></div>
+              <img 
+                src="https://img.freepik.com/premium-vector/natural-banana-drink-horizontal-banner-with-fresh-fruits-splashes-red-ribbon-brand-name_1284-57831.jpg?w=1380" 
+                alt="CanCraze No THC" 
+                class="w-full h-auto rounded-2xl shadow-xl object-cover"
+              />
+              <br>
+              <img 
+                src="https://img.freepik.com/premium-vector/bottled-green-tea-banner-ads_317810-2890.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740"
+                alt="CanCraze No THC" 
+                class="w-full h-auto rounded-2xl shadow-xl object-cover"
+              />
+              <div class="absolute -bottom-4 right-4 bg-white  shadow-lg rounded-lg p-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full flex items-center justify-center bg-green-100 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 " viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900 ">Plant-Based</p>
+                  <p class="text-sm text-gray-500 ">100% Natural</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="fade-in order-1 md:order-2" data-delay="200">
+            <div class="inline-block mb-4 px-4 py-1 bg-green-100  rounded-full">
+              <span class="text-sm font-semibold text-green-800 ">ALL NATURAL</span>
+            </div>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900  mb-6">NO THC BECAUSE WE CAN</h2>
+            <p class="text-lg text-gray-600  mb-8">Our beverages deliver all the benefits of hemp-derived ingredients without any THC. Perfect balance of flavor and function for your active lifestyle.</p>
+            
+            <div class="flex flex-wrap gap-4 mb-8">
+              <div class="inline-flex items-center px-4 py-2 bg-blue-100  rounded-full">
+                <span class="text-sm font-medium text-blue-800 ">0% THC</span>
+              </div>
+              <div class="inline-flex items-center px-4 py-2 bg-purple-100  rounded-full">
+                <span class="text-sm font-medium text-purple-800 ">Lab Tested</span>
+              </div>
+              <div class="inline-flex items-center px-4 py-2 bg-green-100 /40 rounded-full">
+                <span class="text-sm font-medium text-green-800 ">Plant-Based</span>
+              </div>
+            </div>
+            
+            <a href="#" class="inline-flex items-center font-medium text-primary-600  hover:text-primary-700 ">
+              Learn about our process
+              <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20 bg-white ">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+          <div class="inline-block mb-4">
+            <svg class="w-10 h-10 mx-auto text-primary-600 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8.5V12.5L14.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h2 class="font-display mt-4 font-bold text-2xl text-center text-gray-900 ">FLAVOURS</h2>
+          </div>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900  mb-4">Premium Beverages for Every Taste</h2>
+          <p class="max-w-2xl mx-auto text-gray-600 ">Discover our range of handcrafted beverages made with premium ingredients and innovative flavor combinations.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div class="fade-in card-hover group" data-delay="0">
+            <div class="bg-green-50  p-8 rounded-xl text-center">
+              <img 
+                src="https://img.freepik.com/free-vector/isolated-indian-tea-chai-glass_1017-53966.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740"
+                alt="CanCraze Green Tea" 
+                class="w-50 h-auto m- mx-auto mb-6 transform group-hover:-rotate-6 transition-transform duration-300"
+              />
+              <h3 class="font-display font-semibold text-xl text-gray-900  mb-2">Green Tea</h3>
+              <p class="text-gray-500  mb-4">🌿 Green tea: pure, simple, and soothing.
+
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-display font-bold text-lg text-gray-900 ">$4.99</span>
+                <button class="w-10 h-10 rounded-full bg-white  flex items-center justify-center shadow-md hover:bg-primary-50  transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 " viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product 2 -->
+          <div class="fade-in card-hover group" data-delay="0">
+            <div class="bg-green-50  p-8 rounded-xl text-center">
+              <img 
+                src="https://img.freepik.com/free-vector/herbs-spices_1284-24436.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740"
+                alt="CanCraze Chai Teas" 
+                class="w-50 h-auto m- mx-auto mb-6 transform group-hover:-rotate-6 transition-transform duration-300"
+              />
+              <h3 class="font-display font-semibold text-xl text-gray-900  mb-2">Chai Tea</h3>
+              <p class="text-gray-500  mb-4">☕ Sipping serenity, one chai at a time.✨ Chai. Comfort. Calm.
+
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-display font-bold text-lg text-gray-900 ">$11.99</span>
+                <button class="w-10 h-10 rounded-full bg-white  flex items-center justify-center shadow-md hover:bg-primary-50  transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 " viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product 3 -->
+          <div class="fade-in card-hover group" data-delay="0">
+            <div class="bg-green-50  p-8 rounded-xl text-center">
+              <img 
+                src="https://img.freepik.com/free-vector/people-making-coffee_23-2148653034.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740"
+                alt="CanCraze Brew Tea" 
+                class="w-50 h-auto m- mx-auto mb-6 transform group-hover:-rotate-6 transition-transform duration-300"
+              />
+              <h3 class="font-display font-semibold text-xl text-gray-900  mb-2">Brew Tea</h3>
+              <p class="text-gray-500  mb-4">🌿 Just hot water, tea leaves, and a moment of peace.Steep dreams are made of tea☕ .  
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-display font-bold text-lg text-gray-900 ">$7.09</span>
+                <button class="w-10 h-10 rounded-full bg-white  flex items-center justify-center shadow-md hover:bg-primary-50  transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 " viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300  rounded-full text-base font-medium text-gray-700  bg-white  hover:bg-gray-50  transition-colors">
+            View All Products
+            <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Banner Section -->
+    <section class="py-20 bg-gray-900 text-white relative overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in" data-delay="0">
+            <img 
+              src="https://img.freepik.com/premium-photo/portrait-two-asian-women-wearing-gym-clothes_296537-2825.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740" 
+              alt="Cheers to Health" 
+              class="w-full h-auto rounded-2xl shadow-2xl"
+            />
+          </div>
+          
+          <div class="fade-in" data-delay="200">
+            <h2 class="font-display font-bold text-4xl mb-6">CHEERS TO YOUR HEALTH</h2>
+            <p class="text-lg text-gray-300 mb-8">We carefully craft our beverages with scientifically backed ingredients to support your overall wellbeing while delivering exceptional taste in every can.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-4">
+                <div class="h-6 w-6 mt-1 rounded-full bg-primary-600 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold">Mental Clarity</h3>
+                  <p class="text-gray-400">Ingredients that support focus and cognitive function</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="h-6 w-6 mt-1 rounded-full bg-primary-600 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold">Physical Wellness</h3>
+                  <p class="text-gray-400">Anti-inflammatory and antioxidant properties</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="h-6 w-6 mt-1 rounded-full bg-primary-600 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold">Balanced Energy</h3>
+                  <p class="text-gray-400">Sustained energy without the crash</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-full transition-colors duration-300 shadow-lg">
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Background elements -->
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-900 to-gray-800 opacity-50"></div>
+      <div class="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-t from-primary-900 to-transparent opacity-20 blur-3xl"></div>
+      <div class="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-b from-secondary-900 to-transparent opacity-20 blur-3xl"></div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-white ">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900  mb-4">What Our Customers Say</h2>
+          <p class="max-w-2xl mx-auto text-gray-600 ">Don't just take our word for it – hear from the people who enjoy CanCraze beverages every day.</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto fade-in">
+          <div class="bg-gray-50  p-8 md:p-12 rounded-2xl relative">
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 text-4xl">
+              <span class="font-serif text-primary-500 ">"</span>
+            </div>
+            
+            <div class="flex flex-col items-center text-center">
+              <div class="mb-6">
+                <p class="text-lg md:text-xl text-gray-700  italic mb-6">
+                  "I start my mornings with CanCraze and my productivity and focus have noticeably improved. With Altitude Zen, I'm zipping around, completing tasks & helping others do the same. I really love it!"
+                </p>
+                
+                <div class="flex justify-center">
+                  <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flex flex-col items-center">
+                <img 
+                  src="https://img.freepik.com/premium-vector/illustrative-interpretation-challenges-opportunities-modern-job-hunting_1263357-35046.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740" 
+                  alt="Brandon Taylor" 
+                  class="w-16 h-16 rounded-full object-cover mb-3"
+                />
+                <h4 class="font-display font-semibold text-gray-900 ">Cancraze</h4>
+                <p class="text-sm text-gray-500 ">Marketing Director</p>
+                
+              </div>
+              
+            </div>
+            
+            <!-- Testimonial Navigation -->
+            <div class="flex justify-center mt-8 space-x-2">
+              <button class="w-8 h-8 rounded-full border border-gray-300  flex items-center justify-center hover:bg-gray-100  transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 " viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <button class="w-8 h-8 rounded-full border border-gray-300  flex items-center justify-center hover:bg-gray-100  transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 " viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Feed Section -->
+    <section class="py-20 bg-gray-50 ">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+          <h5 class="text-primary-600  font-semibold mb-2 tracking-wide uppercase">Follow Us On</h5>
+          <div class="flex justify-center items-center gap-2 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900 " viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            <span class="font-display font-bold text-xl text-gray-900 ">@cancraze</span>
+          </div>
+          <p class="max-w-2xl mx-auto text-gray-600 ">Join our community and share your CanCraze moments with us!</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="fade-in overflow-hidden rounded-xl shadow-lg" data-delay="0">
+            <img 
+              src="https://img.freepik.com/premium-psd/250ml-can-mockup-energy-drink-metalic-can_669874-191.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740" 
+              alt="CanCraze Instagram" 
+              class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          
+          <div class="fade-in overflow-hidden rounded-xl shadow-lg" data-delay="100">
+            <img 
+              src="https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg" 
+              alt="CanCraze Instagram" 
+              class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          
+          <div class="fade-in overflow-hidden rounded-xl shadow-lg" data-delay="200">
+            <img 
+              src="https://img.freepik.com/premium-vector/black-coffee-promo-design_317810-3559.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740" 
+              alt="CanCraze Instagram" 
+              class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          
+          <div class="fade-in overflow-hidden rounded-xl shadow-lg" data-delay="300">
+            <img 
+              src="https://img.freepik.com/premium-vector/iced-taiwan-japan-bubble-tea-milk-tea-matcha-green-tea_215348-92.jpg?ga=GA1.1.1163441139.1730308635&semt=ais_hybrid&w=740" 
+              alt="CanCraze Instagram" 
+              class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white  overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-primary-600 to-accent-600 rounded-3xl overflow-hidden shadow-xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="p-8 md:p-12 fade-in" data-delay="0">
+              <h2 class="font-display font-bold text-3xl md:text-4xl text-slate-700 mb-6">SIMPLY BETTER DRINKS</h2>
+              <p class="text-lg text-slate-600 mb-8">Join our newsletter to get special offers, new product announcements, and wellness tips delivered to your inbox.</p>
+              
+              <form class="space-y-4">
+                <div>
+                  <input 
+                    type="email" 
+                    placeholder="Your email address" 
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-slate-700 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  />
+                </div>
+                <button 
+                  type="submit" 
+                  class="px-6 py-3 bg-primary-900 text-slate-600 font-medium rounded-lg hover:bg-opacity-90 transition-colors shadow-lg"
+                >
+                  SIGN UP
+                </button>
+              </form>
+            </div>
+            
+            <div class="relative fade-in h-full min-h-[300px] md:min-h-[400px]" data-delay="200">
+              <img 
+                src="https://images.pexels.com/photos/4021983/pexels-photo-4021983.jpeg" 
+                alt="CanCraze Premium Beverage" 
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white rounded-lg shadow-sm m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./assets/logo/can-craze.png"
+              class="h-12 sm:h-14"
+              alt="Can Craze Logo"
+            />
+            <span
+              class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap "
+              >Can Craze</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+          >
+            <li>
+              <a href="aboutUs.html" class="hover:underline me-4 md:me-6"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="./aboutUs.html" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto lg:my-8"
+        />
+        <span class="block text-sm text-gray-500 sm:text-center"
+          >© 2025 <a href="index.html" class="hover:underline">Can Craze™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   </body>
 </html>
