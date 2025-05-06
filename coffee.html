@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CanCraze - Home</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="h-screen">
-    <header class="px-1 md:px-2 fixed top-0 w-full">
+  <body>
+    <header class="px-1 md:px-2 fixed top-0 w-full z-50 backdrop-blur-lg">
       <nav
-        class="bg-primary-900 border-gray-200 dark:bg-gray-900 dark:border-gray-700 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
+        class="bg-primary-900 border-gray-200 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
       >
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
         >
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
+              src="./assets/logo/can-craze.png"
+              class="h-12 md:h-14"
+              alt="Can Craze Logo"
             />
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Flowbite</span
+              class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap"
+              >Can Craze</span
             >
           </a>
           <button
             data-collapse-toggle="navbar-multi-level"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-multi-level"
             aria-expanded="false"
           >
@@ -51,13 +52,12 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-slate-700 bg-secondary-900 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page"
+                  href="./index.html"
+                  class="block py-2 px-3 text-slate-700 rounded-sm md:bg-transparent md:p-0"
                   >Home</a
                 >
               </li>
@@ -65,7 +65,8 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 px-3 text-blue-700 bg-secondary-900 md:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  aria-current="page"
                 >
                   Products
                   <svg
@@ -87,51 +88,49 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    class="py-2 text-sm text-gray-700"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="softDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Soft Drinks</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="energyDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Energy Drinks</a
                       >
                     </li>
-                    <li>
+                    <li class="text-blue-700">
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="coffee.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Coffee</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="bubbleTea.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Bubble Tea</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        href="fruitJuice.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
                         >Fruit Juices</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      <a href="soymilk.html" class="block px-4 py-2 hover:bg-gray-100"
                         >Soy Milk</a
                       >
                     </li>
@@ -140,15 +139,15 @@
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="aboutUs.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   >Contact</a
                 >
               </li>
@@ -157,73 +156,1532 @@
         </div>
       </nav>
     </header>
-    <main class="mt-20 w-full">
-      <section class="flex max-w-screen-xl mx-auto px-6 md:px-8 lg:px-10">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta
-          eveniet deleniti enim possimus veritatis dicta aperiam, ut ea cum et
-          illum laborum dignissimos unde quibusdam, culpa inventore sint neque.
-          Culpa, quod? Sit laboriosam corporis consectetur. Numquam voluptatem
-          ratione, nisi ducimus porro explicabo doloribus molestias ea dolore?
-          Suscipit, quisquam. Illum rerum voluptatibus vitae expedita quod
-          laudantium ipsa vel officia. Provident. Omnis dolor atque voluptates
-          totam suscipit quis consequuntur harum, unde quibusdam voluptatibus!
-          Quasi iusto perspiciatis doloribus veritatis similique assumenda modi
-          dignissimos, nobis deserunt excepturi porro accusamus ipsa cupiditate,
-          earum non. Ratione, obcaecati pariatur! Ipsa, sequi id quos
-          perferendis beatae qui at similique consequuntur maxime saepe iste,
-          doloribus dolorem voluptatem fugiat iusto voluptate quod. Autem ut
-          dolor molestias id rem quo. Possimus, ducimus repudiandae labore ea ut
-          distinctio porro, ad fugit rem maiores, veritatis ratione? Totam
-          molestias praesentium numquam asperiores dolore consectetur aliquid
-          temporibus! Modi, repudiandae id et dolorum nisi assumenda?
-          Perspiciatis aliquam sapiente in tempore hic quaerat et, praesentium
-          excepturi odio nobis consequatur illum nisi deserunt qui vitae
-          temporibus mollitia maiores porro earum assumenda doloribus esse
-          voluptas repellendus est. Incidunt! Error est natus, praesentium quos
-          minima repellat nesciunt iusto, ab omnis illum veniam suscipit dolorum
-          repellendus vitae dolore magni reiciendis? Obcaecati omnis laboriosam
-          optio quo sequi sapiente odit consequatur. Esse! Iste dolorum aut
-          quae, a voluptas vitae praesentium quos fugiat cum in quibusdam dicta
-          ipsum molestias ducimus dolores labore tenetur quisquam obcaecati
-          maxime adipisci repellat quas vel temporibus? Quos, consequuntur. Sint
-          ab quibusdam voluptatibus labore iure, atque nihil! Totam amet
-          officiis voluptatem, nemo omnis provident illo fuga eaque dolore
-          officia repellat. Ex qui distinctio doloribus deleniti nihil quidem
-          iste culpa! Culpa ducimus cumque pariatur, commodi quas sequi, cum aut
-          porro aperiam possimus voluptas nulla assumenda eum magni, quos
-          corporis? Ducimus ratione necessitatibus sequi laborum pariatur vero
-          magnam nobis ipsa suscipit. Dignissimos quod error, iure aliquid quasi
-          quae voluptas a id facilis enim officia minus ratione voluptate? Sunt
-          eligendi adipisci vitae unde alias, nam magni corporis reprehenderit
-          aut fugit? Dolorum, assumenda. Facilis veritatis sunt commodi dicta
-          sed accusamus culpa sit illo in voluptatum! Pariatur tempore quam
-          autem voluptas velit quis, ab sequi mollitia libero possimus esse,
-          dicta quisquam eveniet consequuntur quos. Eveniet id accusamus facere
-          veritatis nemo voluptatem veniam voluptas eos! Mollitia, rem. Esse
-          voluptatem dolor ducimus distinctio laborum sunt quaerat inventore
-          exercitationem veritatis pariatur mollitia numquam, similique fuga
-          laboriosam aut! Aliquam nobis culpa delectus, fugit totam animi
-          consequatur accusantium distinctio aliquid. Voluptatibus, maxime
-          iusto. Rem, nesciunt debitis eos ducimus ab veniam nemo explicabo
-          soluta tenetur laborum ipsam dolore doloremque. Ad. Dicta perferendis
-          id totam, reiciendis iure sed vel tenetur, aut eveniet porro
-          voluptatum enim, hic deserunt ex voluptatem facilis cumque rerum
-          voluptate alias consectetur autem ipsum. Excepturi earum atque
-          repellat? Dicta in repellat ipsum modi! Amet atque laudantium iusto ad
-          vero non dolorum accusamus ea quis dolore quia quisquam
-          exercitationem, nostrum animi voluptatem aspernatur voluptas tenetur.
-          Praesentium quis itaque perspiciatis. Unde non placeat est natus
-          dolorem ipsum nesciunt, quia perspiciatis nisi vero blanditiis animi
-          provident neque, possimus dolor enim incidunt! Asperiores placeat
-          explicabo maxime dicta reiciendis autem eos dolorum consectetur? Quas
-          eaque maxime reiciendis officia doloremque temporibus earum alias
-          laborum, facilis dolores labore sit placeat praesentium enim eius
-          similique voluptates mollitia ipsum perferendis omnis commodi
-          laboriosam illo? Ducimus, vero natus.
-        </h1>
+    <main class="w-full">
+      <!-- hero section -->
+      <section class="mb-10 overflow-hidden">
+        <div
+          class="max-w-screen-xl mx-auto sm:px-6 py-12 md:px-10 md:py-20 overflow-hidden"
+        >
+          <!-- Breadcrumb -->
+          <div
+            class="mt-8 mx-4 sm:mx-0 sm:mt-6 md:mt-2 flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50"
+            aria-label="Breadcrumb"
+          >
+            <ol
+              class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+            >
+              <li class="inline-flex items-center">
+                <a
+                  href="./index.html"
+                  class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 "
+                >
+                  <svg
+                    class="w-3 h-3 me-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                    />
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg
+                    class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <a
+                    href="#"
+                    class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 "
+                    >Products</a
+                  >
+                </div>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <svg
+                    class="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span
+                    class="ms-1 text-sm font-medium text-gray-500 md:ms-2 "
+                    >Coffee</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="flex flex-col lg:flex-row">
+            <div
+              class="w-full lg:w-1/3 p-10 prose"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+            >
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl text-gray-600 leading-tight mb-4"
+              >
+                Elevate Your Coffee Experience
+              </h1>
+              <h2 class="text-xl sm:text-3xl text-gray-600">
+                Awaken Your Senses
+              </h2>
+
+              <p
+                class="text-lg sm:text-2xl text-gray-600 font-light mt-4 leading-relaxed"
+              >
+                Discover the rich aroma and bold flavor of our freshly roasted
+                coffee. Whether you need a morning boost or a midday pick-me-up,
+                our premium blends are crafted to awaken your senses and fuel
+                your day.
+              </p>
+            </div>
+            <div class="w-full lg:w-2/3 py-8 px-10 grid grid-cols-4 gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="900"
+                class="h-64 col-span-4 sm:col-span-4 relative"
+              >
+                <img
+                  class="rounded-xl"
+                  src="./assets/img-hero-section/1.jpg"
+                  alt="fresh beets"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                class="h-64 col-span-4 sm:col-span-2 relative"
+              >
+                <img
+                  class="rounded-xl shadow-xl md:shadow-md"
+                  src="./assets/img-hero-section/2.webp"
+                  alt="red veggies"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                class="h-64 col-span-4 sm:col-span-2 relative"
+              >
+                <img
+                  class="rounded-xl shadow-xl md:shadow-md"
+                  src="./assets/img-hero-section/3.jpg"
+                  alt="asperagas"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                class="hidden md:block h-64 col-span-4 sm:col-span-3 relative rounded-xl"
+              >
+                <img
+                  class="rounded-xl object-cover"
+                  src="./assets/img-hero-section/4.jpg"
+                  alt="carrots"
+                  class="absolute inset-0 object-cover"
+                  style="height: 400px"
+                />
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                class="h-64 col-span-4 sm:col-span-1 relative"
+              >
+                <img
+                  class="rounded-xl shadow-xl md:shadow-md"
+                  src="./assets/img-hero-section/5.webp"
+                  alt="tomato tomato"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- best selling products section -->
+      <section class="mt-12 sm:mt-16 md:mt-32">
+        <div class="max-w-screen-xl mx-auto py-4 sm:py-6 md:py-12 px-4 sm:px-6">
+          <h2
+            data-aos="zoom-in"
+            data-aos-duration="450"
+            data-aos-delay="100"
+            class="text-center text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 uppercase text-slate-700"
+          >
+            Best Selling Products
+          </h2>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 gap-2 sm:gap-2.5 relative"
+          >
+            <!-- Box 1 -->
+            <div
+              class="col-span-1 sm:col-span-2 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-primary-900 rounded-xl h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/decor.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 2 -->
+            <div
+              data-aos="flip-left"
+              data-aos-duration="700"
+              data-aos-delay="300"
+              class="col-span-1 sm:col-span-2 lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-4 bg-gray-200 rounded-xl border border-slate-700 h-64 sm:h-80"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/2.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 3 -->
+            <div
+              data-aos="fade-down"
+              data-aos-duration="800"
+              class="col-span-1 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-xl border border-slate-700 h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/3.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 4 -->
+            <div
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              class="col-span-1 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3 bg-gray-200 rounded-xl border border-slate-700 h-64 sm:h-80"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/5.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 5 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              class="col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5 bg-gray-200 rounded-xl border border-slate-700 h-64 sm:h-80"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/img-hero-section/4.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 6 -->
+            <div
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              class="col-span-1 lg:col-start-4 lg:col-end-5 lg:row-start-3 lg:row-end-4 bg-gray-200 rounded-xl border border-slate-700 h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/6.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 7 -->
+            <div
+              class="hidden md:block col-span-1 sm:col-span-2 lg:col-start-3 lg:col-end-5 lg:row-start-4 lg:row-end-5 bg-primary-900 rounded-xl h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/decor.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 8 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              class="col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-5 bg-gray-200 rounded-xl border border-slate-700 h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/8.webp"
+                alt=""
+              />
+            </div>
+
+            <!-- Box 9 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="600"
+              class="col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3 bg-gray-200 rounded-xl border border-slate-700 h-40 sm:h-48"
+            >
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="./assets/grid-display-section/9.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- selling products section -->
+      <section
+        class="my-12 sm:my-16 md:my-32 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen"
+      >
+        <h2
+          data-aos="zoom-in"
+          data-aos-duration="450"
+          data-aos-delay="100"
+          class="text-center text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 uppercase text-slate-700"
+        >
+          Our Products
+        </h2>
+        <section
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"
+        >
+          <!-- card 1 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="100"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/1.webp"
+              alt="S'mores Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                S'mores Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Inspired by Classic Summer Flavors
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="150"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/2.webp"
+              alt="Caramel Macchiato"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Caramel Macchiato
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Rich Espresso with Sweet Caramel
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$29.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="200"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/3.webp"
+              alt="Draft Latte Variety Pack"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Draft Latte Variety Pack
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Triple, Vanilla, Mocha
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="250"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/4.webp"
+              alt="Caramel Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Caramel Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold Brew + Real Caramel
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- crad 5 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="100"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/5.webp"
+              alt="Oatmilk Double Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Oatmilk Double Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Oatmilk + Cold Brew
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$37.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="150"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/6.webp"
+              alt="Double Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Double Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold Brew + Frothed Milk
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="200"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/7.webp"
+              alt="Cold Brew"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Cold Brew
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Medium Roast Cold Brew
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="250"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/8.webp"
+              alt="Mocha Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Mocha Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold Brew + Real Cocoa
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="100"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/9.webp"
+              alt="Triple Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Triple Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold Brew + Frothed Milk
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 10 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="150"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/10.webp"
+              alt="Cold Brew Concentrate"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Cold Brew Concentrate
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold-Pressed Espresso
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$27.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 11 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="200"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/11.webp"
+              alt="Vanilla Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                Vanilla Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Cold Brew + Vanilla
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 12 -->
+          <div
+            data-aos="fade-down"
+            data-aos-duration="920"
+            data-aos-delay="250"
+            class="w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.01] transition-transform duration-300 ease-in-out"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+              src="./assets/products-display/12.webp"
+              alt="S'mores Draft Latte"
+            />
+            <div class="px-4 sm:px-5 pt-4 sm:pt-5 pb-5">
+              <h5
+                class="text-lg sm:text-xl font-semibold tracking-tight text-slate-700"
+              >
+                S'mores Draft Latte
+              </h5>
+              <p class="text-slate-600 text-sm sm:text-base line-clamp-2">
+                Inspired by Classic Summer Flavors
+              </p>
+              <div class="flex items-center mt-2.5 mb-4 sm:mb-5">
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a11.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-yellow-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-4 h-4 text-gray-200"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="bg-primary-900 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ms-3"
+                  >4.0</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-lg sm:text-xl font-semibold text-slate-800"
+                  >$33.99</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-700 bg-primary-800 hover:bg-primary-900 focus:ring-4 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 text-center transition-colors duration-200 ease-in-out"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+
+    <footer class="bg-white rounded-lg shadow-sm m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./assets/logo/can-craze.png"
+              class="h-12 sm:h-14"
+              alt="Can Craze Logo"
+            />
+            <span
+              class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap"
+              >Can Craze</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+          >
+            <li>
+              <a href="aboutUs.html" class="hover:underline me-4 md:me-6"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center"
+          >© 2025 <a href="index.html" class="hover:underline">Can Craze™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

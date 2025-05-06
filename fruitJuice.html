@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Juices</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="px-1 md:px-2 fixed top-0 w-full z-50 backdrop-blur-lg">
+      <nav
+        class="bg-primary-900 border-gray-200 max-w-screen-xl mx-auto mt-1 md:mt-2 rounded-2xl md:rounded-3xl"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/logo/can-craze.png"
+              class="h-12 md:h-14"
+              alt="Can Craze Logo"
+            />
+            <span
+              class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap"
+              >Can Craze</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-multi-level"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-multi-level"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 px-3 text-slate-700 rounded-sm md:bg-transparent md:p-0"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-blue-700 bg-secondary-900 md:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                  aria-current="page"
+                >
+                  Products
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="softDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
+                        >Soft Drinks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="energyDrinks.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
+                        >Energy Drinks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="coffee.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
+                        >Coffee</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="bubbleTea.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
+                        >Bubble Tea</a
+                      >
+                    </li>
+                    <li class="text-blue-700">
+                      <a
+                        href="fruitJuice.html"
+                        class="block px-4 py-2 hover:bg-gray-100"
+                        >Fruit Juices</a
+                      >
+                    </li>
+                    <li>
+                      <a href="soymilk.html" class="block px-4 py-2 hover:bg-gray-100"
+                        >Soy Milk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="aboutUs.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-26">
+      <section class="hero">
+        <section class="hero_nav_link flex justify-center items-center">
+          <div class="container border border-x-0 border-gray-300">
+            <div
+              aria-label="Breadcrumb"
+              class="flex items-center text-sm font-medium p-3"
+            >
+              <a href="/index.html" class="hover:underline text-gray-400"
+                >Home</a
+              >
+              <span class="breadcrumb__divider mx-2" aria-hidden="true">
+                <svg
+                  width="14px"
+                  height="14px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </span>
+              <a
+                href="/fruitJuice.html"
+                class="hover:underline text-primary-100"
+                >Juices</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="hero_image mt-2 flex justify-center items-center">
+          <img
+            src="https://wingreensworld.com/cdn/shop/files/juices.jpg?v=1683551499"
+            alt="juices"
+          />
+        </section>
+        <section class="hero_description flex justify-center items-center">
+          <div class="container border-x-0 border-t-0 border-gray-300 border-2">
+            <h2
+              class="text-3xl sm:text-4xl font-bold mb-2 px-5 text-secondary-100"
+            >
+              Juices
+            </h2>
+            <p
+              class="text-gray-400 mb-5 line-clamp-1 sm:line-clamp-2 text-[16px] sm:text-[18px] lg:text-xl px-5"
+            >
+              Our signature juices are real and Raw. All our juices are made
+              with fruit, not concentrate and are free of artificial flavours
+              and sugar. We bring you goodness and flavour in each bottle.
+              Choose from packs of 1, 2, 6, 12, and even more to enjoy Raw
+              Pressery all week long!
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="best-selling my-10">
+        <section class="best-selling-description flex justify-center">
+          <p
+            class="container text-3xl sm:text-4xl font-bold mb-2 px-5 text-secondary-100"
+          >
+            BEST SELLING PRODUCT
+          </p>
+        </section>
+        <section
+          class="best-selling-product flex justify-center items-center my-10 px-4"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 container max-w-7xl"
+          >
+            <!-- Carousel Section -->
+            <div class="best-selling-product w-full">
+              <div id="gallery" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div
+                  class="relative h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[28rem] overflow-hidden rounded-lg"
+                >
+                  <!-- Item 1 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="https://rita.com.vn/images/slider/cache/1181bf3c69d61a1dc4adc228459ef53f/Banner_tropical_fruit_juice_RITA_brand_in_500ml_cans.webp"
+                      class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                      alt="Tropical Fruit Juice Can"
+                    />
+                  </div>
+                  <!-- Item 2 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="https://rita.com.vn/images/slider/cache/b932edbb3893030345216a551ab987cf/152_fl_oz_Pet_Bottle_Coconut_water__plus_Hydration_electrolytes_manufacturer.webp"
+                      class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                      alt="Coconut Water Bottle"
+                    />
+                  </div>
+                  <!-- Item 3 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="https://biz-file.com/c/2307/704874-700x364.png?2"
+                      class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                      alt="Juice Packaging"
+                    />
+                  </div>
+                </div>
+                <!-- Slider controls -->
+                <button
+                  type="button"
+                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 /30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white  rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 /30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white  rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!-- Product Detail Section -->
+            <div class="best-selling-product-detail w-full h-full">
+              <div
+                class="w-full h-full p-6 sm:p-8 bg-gradient-to-br from-orange-50 to-white transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+              >
+                <!-- Badge -->
+                <div class="flex items-center mb-5">
+                  <i
+                    class="fa-solid fa-fire text-orange-500 text-2xl mr-3 animate-pulse"
+                  ></i>
+                  <span
+                    class="text-orange-600  font-extrabold uppercase tracking-wider text-sm sm:text-base bg-orange-100 px-3 py-1 rounded-full"
+                  >
+                    Best Seller
+                  </span>
+                </div>
+                <!-- Title -->
+                <a href="#">
+                  <h3
+                    class="text-2xl sm:text-3xl font-extrabold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-yellow-500"
+                  >
+                    Bursting with Real Fruit Flavor!
+                  </h3>
+                </a>
+                <!-- Short Tagline -->
+                <p
+                  class="text-xs sm:text-sm text-orange-600  font-bold uppercase mb-3 tracking-wide"
+                >
+                  100% Natural • No Added Sugar • Cold-Pressed
+                </p>
+                <!-- Description -->
+                <p
+                  class="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base font-medium"
+                >
+                  Our tropical fruit juice blend, crafted from fresh oranges,
+                  pineapples, and mangoes, is packed with Vitamin C and
+                  antioxidants to supercharge your immune system and keep you
+                  refreshed all day.
+                </p>
+                <!-- Flavor Notes -->
+                <ul class="text-gray-600 text-xs sm:text-sm mb-6 space-y-2">
+                  <li class="flex items-center">
+                    <span
+                      class="w-2 h-2 bg-orange-500 rounded-full mr-2"
+                    ></span>
+                    Freshly squeezed from real fruits
+                  </li>
+                  <li class="flex items-center">
+                    <span
+                      class="w-2 h-2 bg-orange-500 rounded-full mr-2"
+                    ></span>
+                    No preservatives or artificial coloring
+                  </li>
+                  <li class="flex items-center">
+                    <span
+                      class="w-2 h-2 bg-orange-500 rounded-full mr-2"
+                    ></span>
+                    Perfect for breakfast or post-workout hydration
+                  </li>
+                </ul>
+                <!-- Ratings -->
+                <div class="flex items-center mb-6">
+                  <div class="flex items-center text-yellow-400 mr-3 space-x-1">
+                    <i class="fa-solid fa-star text-sm sm:text-lg"></i>
+                    <i class="fa-solid fa-star text-sm sm:text-lg"></i>
+                    <i class="fa-solid fa-star text-sm sm:text-lg"></i>
+                    <i class="fa-solid fa-star text-sm sm:text-lg"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-sm sm:text-lg"
+                    ></i>
+                  </div>
+                  <span class="text-xs sm:text-sm text-gray-600 font-medium"
+                    >4.8/5 (2,145 reviews)</span
+                  >
+                </div>
+                <!-- CTA Link -->
+                <a
+                  href="#"
+                  class="inline-flex items-center px-4 sm:px-5 py-2 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors duration-200 text-sm sm:text-base"
+                >
+                  Discover More
+                  <svg
+                    class="w-4 sm:w-5 h-4 sm:h-5 ml-2 rtl:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="menu flex justify-center items-center my-10">
+        <div class="container mx-auto px-4 py-6">
+          <!-- Main grid: Sidebar and content -->
+          <div class="grid grid-cols-1 lg:grid-cols-[30%_1fr] gap-6">
+            <!-- Sidebar -->
+            <div
+              class="p-4 rounded lg:h-[620px] h-16 relative top-0 lg:sticky lg:top-32 lg:bg-white bg-none"
+            >
+              <div
+                class="side-bar-btn-container flex justify-center items-center gap-5"
+              >
+                <button
+                  id="dropdownHelperButton1"
+                  data-dropdown-toggle="dropdownHelper1"
+                  class="w-1/2 text-white bg-secondary-400 hover:bg-secondary-200 focus:ring-4 focus:outline-none focus:ring-secondary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex 2xl:gap-24 xl:gap-14 lg:gap-4 md:gap-60 sm:gap-42 gap-8 items-center"
+                  type="button"
+                >
+                  <span>WEIGHT</span>
+                  <svg
+                    class="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <button
+                  id="dropdownHelperButton"
+                  data-dropdown-toggle="dropdownHelper"
+                  class="w-1/2 text-white bg-secondary-400 hover:bg-secondary-200 focus:ring-4 focus:outline-none focus:ring-secondary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex 2xl:gap-24 xl:gap-14 lg:gap-4 md:gap-60 sm:gap-42 gap-8 items-center"
+                  type="button"
+                >
+                  <span>BRAND</span>
+                  <svg
+                    class="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:block mx-auto mb-4">
+                <img src="images/cat.png" alt="cat" />
+                <p class="text-center text-3xl">are you hungry?</p>
+                <div class="order-btn flex justify-center items-center">
+                  <button
+                    type="button"
+                    class="mt-10 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                  >
+                    Oder Now
+                  </button>
+                </div>
+              </div>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownHelper1"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60"
+              >
+                <ul
+                  class="p-3 space-y-1 text-sm text-gray-700"
+                  aria-labelledby="dropdownHelperButton1"
+                >
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-1"
+                          aria-describedby="helper-checkbox-text-1"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-1"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>200ml</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-2"
+                          aria-describedby="helper-checkbox-text-2"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-2"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>250ml</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-3"
+                          aria-describedby="helper-checkbox-text-3"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-3"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>750ml</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="dropdownHelper"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60"
+              >
+                <ul
+                  class="p-3 space-y-1 text-sm text-gray-700"
+                  aria-labelledby="dropdownHelperButton"
+                >
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-4"
+                          aria-describedby="helper-checkbox-text-1"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-4"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>Rita</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-5"
+                          aria-describedby="helper-checkbox-text-2"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-5"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>Minute Maid</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex p-2 rounded-sm hover:bg-secondary-900">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="helper-checkbox-6"
+                          aria-describedby="helper-checkbox-text-3"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-secondary-400 bg-gray-100 border-gray-300 rounded-sm focus:ring-secondary-700"
+                        />
+                      </div>
+                      <div class="ms-2 text-sm">
+                        <label
+                          for="helper-checkbox-6"
+                          class="font-medium text-gray-900"
+                        >
+                          <div>Tropicana</div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+              <!-- Product Card -->
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/images/2023/Edit_old_products/Juice/Fresh_Mix_fruit__Juice_500ml.webp"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Mixed Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/images/2023/Edit_old_products/Juice/Fresh_Orange_fruit_Juice_500ml.webp"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Orange Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://web.tradekorea.com/product/797/2151797/Supplier_Fresh_Guava_Fruit_Juice_Drink_500ml_Can_2.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Guava Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/ritaproducts/2022/Fresh_Red_Dragon_fruit_Juice_500ml.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Red Dragon Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/images/2023/Edit_old_products/Juice/Fresh_passion_fruit_Juice_500ml.webp"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      passion Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/ritaproducts/2022/Fresh_Soursop_fruit_Juice_500ml.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Soursop Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://rita.com.vn/ritaproducts/2022/Fresh_Apple_fruit_Juice_500ml.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Apple Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://img4.21food.com/img/product/2024/7/17/ritabeveragee-10060240.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Mangosteen Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white  rounded-lg shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="p-8 rounded-t-lg border-b border-gray-100  w-full object-contain"
+                    src="https://tandobeverage.com/wp-content/uploads/2021/01/FD-C033-strawberry-e1614832733109.jpg"
+                    alt="product image"
+                  />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <h5
+                      class="text-xl font-semibold tracking-tight text-gray-900  mb-4"
+                    >
+                      Strawberry Fruit - 200ML
+                    </h5>
+                  </a>
+
+                  <!-- Price -->
+                  <div class="flex gap-2 items-center mb-3">
+                    <p class="line-through text-gray-500">$10</p>
+                    <p class="text-2xl font-semibold">$6</p>
+                    <p class="text-secondary-300">| 20% Off</p>
+                  </div>
+
+                  <!-- Rating -->
+                  <div class="flex items-center mb-5">
+                    <div class="flex space-x-1 text-yellow-300">
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg class="w-4 h-4 fill-current" ...></svg>
+                      <svg
+                        class="w-4 h-4 text-gray-200 "
+                        ...
+                      ></svg>
+                    </div>
+                  </div>
+
+                  <!-- Select + Button -->
+                  <div class="flex flex-col sm:flex-row gap-3">
+                    <select
+                      class="w-full bg-gray-50 border border-gray-300 text-secondary-300 text-lg font-bold rounded-lg focus:ring-secondary-300 focus:border-secondary-300 p-2.5   "
+                    >
+                      <option>Pack of 6</option>
+                      <option>Pack of 4</option>
+                      <option>Pack of 2</option>
+                      <option>Pack of 1</option>
+                    </select>
+
+                    <a
+                      href="#"
+                      class="w-full text-white bg-secondary-100 hover:bg-secondary-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center "
+                    >
+                      <i class="fa-solid fa-cart-shopping mr-1"></i>Add
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white rounded-lg shadow-sm m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./assets/logo/can-craze.png"
+              class="h-12 sm:h-14"
+              alt="Can Craze Logo"
+            />
+            <span
+              class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap "
+              >Can Craze</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+          >
+            <li>
+              <a href="aboutUs.html" class="hover:underline me-4 md:me-6"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto  lg:my-8"
+        />
+        <span class="block text-sm text-gray-500 sm:text-center"
+          >© 2025 <a href="index.html" class="hover:underline">Can Craze™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
